@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
  
-export const dynamic = 'force-dynamic';
+
  
 const DATA_DIR = fs.existsSync('/data') ? '/data' : path.join(process.cwd(), 'data');
 if (!fs.existsSync(DATA_DIR)) {
